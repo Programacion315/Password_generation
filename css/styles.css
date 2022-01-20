@@ -1,0 +1,46 @@
+/*º-º-º-º-|-º-º-º-º*/
+/*css*/
+/*º-º-º-º-|-º-º-º-º*/
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-size: 20px;
+}
+
+/*Will happen when we select it*/
+*::selection {
+  background-color: red;
+  color: #fff;
+}
+
+/*to make it work on mozilla*/
+*::-moz-selection {
+  background-color: red;
+  color: #fff;
+}
+
+body{
+                   background-color: rgb(19, 101, 139);
+                   color: #fff;
+}
+
+.container{
+                   max-width: 500px;
+                   /*when on a mobile device smaller than 500px*/
+                   width: 90%;
+                   margin: 40px auto;
+}
+
+/*º-º-º-º-|-º-º-º-º*/
+/*Row and column styles*/
+/*º-º-º-º-|-º-º-º-º*/
+
+.app .row {
+                   margin-bottom: 40px;
+                   display: flex;
+                   flex-direction: row;
+                   justify-content: space-between;
+}
+
