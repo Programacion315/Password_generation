@@ -1,0 +1,48 @@
+/*-------------○ ♥ ♣ ♦ ♠ ○-------------*/
+/*General styles*/
+/*-------------○ ♥ ♣ ♦ ♠ ○-------------*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+*::selection{
+    background-color: rebeccapurple;
+    color: white;
+}
+
+/*Mozilla browser*/
+*::-moz-selection{
+    background-color: rebeccapurple;
+    color: white;
+}
+
+body{
+    background: blanchedalmond;
+}
+
+.container{
+    max-width: 500px;
+    /*Less than 500px its width is 90%*/
+    width: 90%;
+    margin: 40px auto;
+    
+}
+
+/*-------------○ ♥ ♣ ♦ ♠ ○-------------*/
+/*Row and column styles*/
+/*-------------○ ♥ ♣ ♦ ♠ ○-------------*/
+
+.app .row{
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.app .columns{
+    width: 50%;
+}
