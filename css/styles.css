@@ -48,5 +48,68 @@ body{
 }
 
 /*-------------○ ♥ ♣ ♦ ♠ ○-------------*/
-/*Ultima modificacion*/
+/*General input and button styles*/
 /*-------------○ ♥ ♣ ♦ ♠ ○-------------*/
+
+.app label{
+    line-height: 40px;  
+}
+
+.app input{
+    text-align: center; /*All the text of the entries will be centered*/
+    border: none;
+}
+
+.app .btn{
+    width: 100%;
+    background-color: blueviolet;
+    color: #fff;
+    display: inline-block;
+    height: 40px;
+    vertical-align: top;
+    font-size: 16px;
+    text-align: center;
+    border:none;
+    border-radius: 4px;
+    cursor:pointer;
+    transition: all .3s ease;
+}
+
+.app .btn:hover{
+    background-color: rgb(255, 83, 83);;
+}
+
+.app .btn .false{
+    background-color: #33257e;
+}
+
+/*-------------○ ♥ ♣ ♦ ♠ ○-------------*/
+/*Row: number of characters*/
+/*-------------○ ♥ ♣ ♦ ♠ ○-------------*/
+
+.app .character-numbers .buttons div{
+
+    width: 100%;
+}
+
+.app .character-numbers .buttons div:nth-child(1) button{
+    border-radius: 4px 0 0 4px;
+}
+
+.app .character-numbers input{
+    height: 40px;
+    width: 100%;
+    cursor:default;
+    background: #33257e;
+    color: white;
+}
+
+.app .character-numbers .buttons div:nth-child(3) button{
+    border-radius: 0px 4px 4px 0px;
+}
+
+.app .character-numbers .buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
