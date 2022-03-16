@@ -181,3 +181,95 @@ input{
 
     background-color: rgb(255, 83, 83);
 }
+
+.app .row.row.generator .input-password{
+
+    width: 100%;
+    background: none;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.app .row.row.generator .input-password:hover{
+    border: 1px solid rgba(255, 255, 255, .50);
+}
+
+.app .fila.row.generator input::selection{
+
+    background: #212139;
+}
+
+.app .fila.row.generator input::-moz-selection{
+    
+    background: #212139;
+}
+
+/*-------------○ ♥ ♣ ♦ ♠ ○-------------*/
+/*Fila: Alerta*/
+/*-------------○ ♥ ♣ ♦ ♠ ○-------------*/
+
+.app .row.alert{
+    justify-content: flex-end; /*Me posiciona la columna hacia la derecha*/
+
+}
+
+.app .row.alert .alert-copy{
+   
+    width: 100%;
+    margin-right: 115px;
+    color: white;
+    color: rgb(255,255,255,0);
+    transition: all .3s ease;
+}
+
+.app .row.alert .alert-copy.active{
+     color: rgb(255, 255, 255,1);
+}
+
+.app .row.alert .alert-copy p,
+.app .row.alert .alert-copy i {
+
+    color: rgb(255, 255, 255,1);
+}
+
+/*-------------○ ♥ ♣ ♦ ♠ ○-------------*/
+/*Media queries*/
+/*-------------○ ♥ ♣ ♦ ♠ ○-------------*/
+@media screen and (max-width: 500px){
+
+    .app .row{
+
+        flex-direction: column;
+        margin-bottom: 20px;
+        
+    }
+
+    .app .row .columns{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .app .row.generator{
+            border-top: 1px solid rgba(255, 255, 255, .25);
+            padding-top: 40px;
+    }
+
+    .app .row.row.generator .columns:nth-child(1),
+    .app .row.row.generator .columns:nth-child(2){
+        width: 100%;
+    }
+
+    .app .row.generator .btn.btn.btn-generate::after{
+
+        top: auto;
+        left: 50%;
+        right: 50%;
+        bottom: -7px;
+
+    }
+}
