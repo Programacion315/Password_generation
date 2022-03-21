@@ -40,5 +40,30 @@
         }
         
     });
+
+    app.elements.namedItem('btn-simbols').addEventListener('click',function(){
+        
+        //Referencia al elemento que fue clickeado
+        //Quita o pone la clase dependiendo si la tiene o no
+        btnToogle(this);
+        configuracion.numeros = !configuracion.numeros;
+    });
+
+    
+    app.elements.namedItem('btn-numbers').addEventListener('click',function(){       
+        btnToogle(this);
+        configuracion.mayusculas = !configuracion.mayusculas;
+    });
+    app.elements.namedItem('btn-capital-letters').addEventListener('click',function(){       
+        btnToogle(this);
+    });
+
+    //Funciones
+
+    function btnToogle(elemento){
+        elemento.classList.toggle('false');
+        elemento.childNodes[0].classList.toggle('fa-check'); 
+        elemento.childNodes[0].classList.toggle('fa-times');
+    }
    
 }())

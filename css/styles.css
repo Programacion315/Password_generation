@@ -83,11 +83,11 @@ h1{
 }
 
 .app .btn:hover{
-    background-color: rgb(255, 83, 83);;
+    background-color: rgb(32, 207, 99);;
 }
 
-.app .btn .false{
-    background-color: #33257e;
+.app .false{
+    background-color: #ec150d !important;
 }
 
 /*-------------○ ♥ ♣ ♦ ♠ ○-------------*/
