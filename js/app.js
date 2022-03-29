@@ -58,6 +58,11 @@
         btnToogle(this);
     });
 
+    app.elements.namedItem('btn-generate').addEventListener('click', function(){
+
+        generarPassword();
+    });
+
     //Funciones
 
     function btnToogle(elemento){
@@ -66,4 +71,22 @@
         elemento.childNodes[0].classList.toggle('fa-times');
     }
    
+    function generarPassword(){
+
+        var caracteresFinales = '';
+        var password = '';
+
+        for(propiedad in configuracion){
+            
+            
+            if(configuracion[propriedad] == true){
+                
+                caracteresFinales += caracteres[propriedad] + ' ';
+                
+            }
+        }
+
+        caracteresFinales = caracteresFinales.split(' ');   
+
+    }
 }())
